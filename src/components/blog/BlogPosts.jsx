@@ -117,7 +117,7 @@ function BlogPosts() {
                     <p>A melhor linguagem de programação é a que resolve o seu problema da forma mais eficiente, levando em conta o contexto, a equipe e o objetivo final.</p>
                     <p>Mais importante do que escolher “a melhor”, é dominar os fundamentos da lógica de programação, pois isso permitirá que você se adapte facilmente a qualquer linguagem ou tecnologia que surgir no futuro.</p>
 
-                    💡 Em resumo: não é sobre qual linguagem é a melhor — é sobre qual linguagem é a melhor para você, para o seu projeto e para o seu momento.
+                    Em resumo: não é sobre qual linguagem é a melhor — é sobre qual linguagem é a melhor para você, para o seu projeto e para o seu momento.
                 </>
             ),
             date: "2024-01-10",
