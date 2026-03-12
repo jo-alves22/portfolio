@@ -2,7 +2,7 @@ import './Projects.css'
 import chatbot from '../../assets/chatbotwide.png'
 import cambiomoedas from '../../assets/cambiomoedas.png'
 import siga from '../../assets/sigafatec.png'
-import hotel from '../../assets/hotel.png'
+import hotel from '../../assets/Hotel.png'
 
 export default function Projects () {
     return(
