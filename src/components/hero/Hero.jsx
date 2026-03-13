@@ -1,11 +1,11 @@
 import './Hero.css'
 import rect from '../../assets/rect.svg'
+import resume from '../../assets/resume.pdf'
 
 function Hero() {
 
     return(
-        <>
-            <div id='hero' className='container'>
+        <div id='hero' className='container'>
                 <img className="svg-rect" src={rect} alt="retalgulo" />
                 <div className="info">
                     <p>Hi, my name is</p>
@@ -13,7 +13,10 @@ function Hero() {
                     <span>SOFTWARE AND ETL DEVELOPER</span>
                     <div>
                         <div className="cv">
-                            <a href="">Download Resume</a>
+                            {/* import ensures Vite bundles the PDF and gives us the correct url */}
+                            <a href={resume} target="_blank" rel="noreferrer">
+                                Download Resume
+                            </a>
                         </div>
                         
                         <div className='social'>
@@ -53,9 +56,6 @@ function Hero() {
                 </div>
 
             </div>
-            
-            
-        </>
     )
 }
 export default Hero
