@@ -1,19 +1,94 @@
-.containerskill{
+.containerskill {
     width: 100vw;
 }
-.titleskills{
+
+.titleskills {
     color: rgb(73, 97, 220);
     font-weight: 800;
-    font-size:xx-large;
-    margin-bottom: 100px;
+    font-size: xx-large;
+    margin-bottom: 60px;
     margin-top: 150px;
 }
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-around;
-    padding-left: 110px;
-    padding-right: 110px;
-    width: 80vw;
-    margin-left: 100px;
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding: 0 80px;
+    max-width: 960px;
+    margin: 0 auto 80px;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 32px 28px 24px;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+    cursor: default;
+    min-width: 130px;
+    border: 1.5px solid rgba(73, 97, 220, 0.08);
+    transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.skill-card:hover {
+    box-shadow: 0 12px 36px rgba(73, 97, 220, 0.18);
+    border-color: rgba(73, 97, 220, 0.3);
+}
+
+.skill-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(73, 97, 220);
+}
+
+.skill-icon svg {
+    width: 56px;
+    height: 56px;
+}
+
+.skill-name {
+    font-weight: 700;
+    font-size: 0.88rem;
+    color: rgb(50, 50, 60);
+    letter-spacing: 0.01em;
+}
+
+.skill-level {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: rgb(73, 97, 220);
+    border-radius: 20px;
+    padding: 4px 12px;
+    letter-spacing: 0.02em;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.skill-card:hover .skill-level {
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .skills {
+        padding: 0 24px;
+        gap: 16px;
+    }
+
+    .skill-card {
+        min-width: 110px;
+        padding: 24px 20px 18px;
+    }
+
+    .skill-icon svg {
+        width: 44px;
+        height: 44px;
+    }
 }

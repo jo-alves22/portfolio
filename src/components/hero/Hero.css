@@ -75,20 +75,38 @@ body {
     text-align: left;
     display: flex;
     align-items: center;
-    height: 250px;
-    width: 250px;
-    padding: 40px;
-    margin-top: 200px;
+    height: auto;
+    width: 300px;
+    padding: 30px 35px;
+    margin-top: 160px;
 }
 pre{
-    font-size: 18px;
+    font-size: 14px;
     font-family: 'Source Code Pro', monospace;
+    margin: 0;
 }
-.keyword {
-    color: red;
-    font-weight: normal;
-}
-.keyword1{
+.etl-cmd {
     color: blueviolet;
     font-weight: bold;
+}
+.etl-key {
+    color: rgb(73, 97, 220);
+}
+.etl-val {
+    color: #c0392b;
+}
+.etl-success {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.cursor {
+    display: inline;
+    color: rgb(73, 97, 220);
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
 }
