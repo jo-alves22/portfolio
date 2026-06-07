@@ -4,6 +4,7 @@ import chatbot from '../../assets/chatbotwide.png'
 import cambiomoedas from '../../assets/cambiomoedas.png'
 import siga from '../../assets/sigafatec.png'
 import hotel from '../../assets/Hotel.png'
+import academico from '../../assets/gerenciadoracademico.png'
 
 const cardVariants = {
     hidden: { opacity: 0, y: 60 },
@@ -31,6 +32,36 @@ export default function Projects () {
             >
                 Projetos
             </motion.h1>
+
+            <motion.section
+                className='cardproject'
+                variants={cardVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: '-80px' }}
+            >
+                <div className='description'>
+                    <h2>Gerenciador Acadêmico</h2>
+                    <p>
+                        Sistema web de gestão acadêmica com controle de alunos, professores, disciplinas, turmas, matrículas e notas,
+                        com autenticação e controle de acesso por perfil (Admin, Professor, Aluno).
+                        O projeto é dividido em:
+                        <li><b>Backend</b>: API REST em Java 17 com Spring Boot e Spring Data JPA</li>
+                        <li><b>Frontend</b>: SPA em Angular 15 com Bootstrap 5</li>
+                        <li><b>Banco de dados</b>: MySQL 8, com seed de dados de exemplo</li>
+                        <li><b>Infraestrutura</b>: Orquestração completa via Docker Compose</li>
+                    </p>
+                    <a href="https://github.com/jo-alves22/GerenciadorAcademico" target="blank" rel="noreferrer" aria-label="repositorio github">
+                        <GitHubIcon />
+                    </a>
+                </div>
+                <div className='imgproject'>
+                    <img src={academico} alt="Tela do gerenciador acadêmico" />
+                    <div className='img-overlay'>
+                        <a href="https://github.com/jo-alves22/GerenciadorAcademico" target="blank" rel="noreferrer">Ver repositório →</a>
+                    </div>
+                </div>
+            </motion.section>
 
             <motion.section
                 className='cardproject'
@@ -114,31 +145,6 @@ export default function Projects () {
                 </div>
             </motion.section>
 
-            <motion.section
-                className='cardproject'
-                variants={cardVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: '-80px' }}
-            >
-                <div className='description'>
-                    <h2>Hotel Campos Elíseos</h2>
-                    <p>
-                        Site para divulgação e gestão dos serviços hoteleiros.
-                        O projeto foi desenvolvido utilizando HTML, CSS e Javascript para obtenção
-                        de uma interface dinâmica e simples.
-                    </p>
-                    <a href="https://github.com/jo-alves22/CambioMoedas" target="blank" rel="noreferrer" aria-label="repositorio github">
-                        <GitHubIcon />
-                    </a>
-                </div>
-                <div className='imgproject'>
-                    <img src={hotel} alt="Tela home do site Hotel Campos Elíseos" />
-                    <div className='img-overlay'>
-                        <a href="https://github.com/jo-alves22/CambioMoedas" target="blank" rel="noreferrer">Ver repositório →</a>
-                    </div>
-                </div>
-            </motion.section>
         </div>
     )
 }
