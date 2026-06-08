@@ -76,6 +76,12 @@
     opacity: 1;
 }
 
+@media (max-width: 768px) {
+    .titleskills {
+        margin-top: 60px;
+    }
+}
+
 @media (max-width: 600px) {
     .skills {
         padding: 0 24px;

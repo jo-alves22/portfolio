@@ -110,3 +110,51 @@ pre{
     0%, 100% { opacity: 1; }
     50%       { opacity: 0; }
 }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
+        padding: 0 24px;
+        box-sizing: border-box;
+    }
+    .svg-rect {
+        display: none;
+    }
+    .info {
+        margin-top: 32px;
+        text-align: center;
+    }
+    .info h1 {
+        font-size: 2rem;
+    }
+    .info p,
+    .info span {
+        font-size: 13px;
+        letter-spacing: 1.5px;
+        word-break: break-word;
+    }
+    .cv {
+        width: 100%;
+        margin-top: 24px;
+        box-sizing: border-box;
+    }
+    .social {
+        width: 100%;
+        justify-content: center;
+        margin-top: 8px;
+    }
+    .cardtext {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 32px;
+        margin-bottom: 40px;
+        padding: 20px 24px;
+    }
+    pre {
+        font-size: 12px;
+        overflow-x: auto;
+        white-space: pre-wrap;
+    }
+}
